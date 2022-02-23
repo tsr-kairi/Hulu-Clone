@@ -1,18 +1,18 @@
 import React from "react";
-import ParaGraph from "./common/ParaGraph";
-import ParaGraph3 from "./common/ParaGraph3";
-import SubHeader2 from "./common/SubHeader2";
+import Para from "./common/Para";
+import SubHeader from "./common/SubHeader";
 import { HiChevronDown, HiArrowNarrowRight } from "react-icons/hi";
+import Heading from "./common/Heading";
 
 function BillBoard() {
   return (
-    <div className="h-[70vh] md:h-screen  m-auto bg-zinc-900 md:pt-6 bg-lightBlack flex flex-col justify-center items-center">
+    <div className="h-[70vh] md:h-screen m-auto bg-zinc-900 md:pt-6 bg-lightBlack flex flex-col justify-center items-center">
       <div className=" max-w-4xl container flex justify-center items-center flex-col">
-        <SubHeader2 text={"HULU + LIVE TV, NOW WITH DISNEY+ AND ESPN+"} />
+        <SubHeader text={"HULU + LIVE TV, NOW WITH DISNEY+ AND ESPN+"} />
 
-        <ParaGraph text={"Live TV Makes It Better"} />
+        <Heading text={"Live TV Makes It Better"} />
 
-        <ParaGraph3
+        <Para
           text={
             "Make the switch from cable. Get 75+ top channels on Hulu with your favorite live sports, news, and events - plus the entire Hulu streaming library. Access endless entertainment with Disney+ and live sports with ESPN+. All three for a new price of $69.99/month."
           }

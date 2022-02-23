@@ -40,9 +40,18 @@ function SpotLight() {
     ],
   });
 
-  const handleSelection = (e) => {
-    setSelected(e);
+  const handleSelection = (index) => {
+    const tab = "LIVE SPORTS";
+    if (index === 0) {
+      tab = "LIVE SPORTS";
+    } else if (index === 1) {
+      tab = "BREAKING NEWS";
+    } else if (index === 2) {
+      tab = "BIGGEST EVENTS";
+    }
+    setSelected(tab);
   };
+
   return (
     <div
       style={{
@@ -55,7 +64,7 @@ function SpotLight() {
     >
       <div className={`flex flex-col justify-center w-[90%] md:w-2/3 m-auto`}>
         <div className="">
-          <Tab.Group>
+          <Tab.Group onChange={(index) => handleSelection(index)}>
             <Tab.List className="md:w-6/12 space-x-5 flex mb-8">
               {Object.keys(categories).map((category) => (
                 <Tab

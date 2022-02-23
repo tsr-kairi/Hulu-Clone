@@ -17,7 +17,6 @@ export default function Home() {
       <SpotLight />
       <PlanSection />
       <Footer />
-      {/* <h1 className="w-full h-[60vh]">Footer</h1> */}
     </main>
   );
 }

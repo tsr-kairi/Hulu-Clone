@@ -8,7 +8,7 @@ function Header() {
 
   return (
     <header className="flex justify-end mr-5 md:mr-9 h-20 items-center">
-      <Link href={"/login"}>
+      <Link href="/login">
         <span className=" text-white text-[14px] font-bold tracking-widest uppercase cursor-pointer md:block hidden">
           Log in
         </span>
@@ -34,7 +34,7 @@ function Header() {
               : "top-[-100vh] transition-all duration-700 ease-in"
           }`}
         >
-          <Link href={"/login"}>
+          <Link href="/login">
             <span className="text-2xl flex flex-col transition-all duration-700 ease-in">
               Login
               <span

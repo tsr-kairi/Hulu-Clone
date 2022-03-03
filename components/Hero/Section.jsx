@@ -13,10 +13,9 @@ function Section() {
           className="object-contain mb-3"
           src="/images/site-logo.png"
           alt="Logo"
-          // layout="fill"
-          width="600px"
-          height="130px"
-          min-width="100px"
+          width={600}
+          height={130}
+          min-width={100}
         />
         <Para
           text={
@@ -26,7 +25,7 @@ function Section() {
         <Button text={"get the disney bundle"} />
         <div className="flex m-0">
           <small className="text-[10px] text-[#868d9b] mt-4 font-bold underline cursor-pointer">
-            What's included?
+            Whats included?
           </small>
           <small className="text-[10px] text-[#868d9b] mt-4 mx-1 font-semibold">
             See
